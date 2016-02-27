@@ -14,3 +14,18 @@ function Person(job, married) {
 
 // create a "gabby" object using the Person constructor!
 gabby = new Person("student", true)
+----------------------------
+var james = {
+    job: "programmer",
+    married: false,
+    speak: function(mood) {
+      if(mood === "great") {
+        console.log("Hello, I am feeling great")
+      } else {
+        console.log("Hello, I am feeling just okay")
+      }
+    }
+};
+
+james.speak("great");
+james.speak("just okay");
