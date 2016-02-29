@@ -76,3 +76,13 @@ var myObj = {
 
 console.log( myObj.hasOwnProperty('name') ); // should print true
 console.log( myObj.hasOwnProperty('nickname') ); // should print false
+---------------------------------
+var suitcase = {
+    shirt: "Hawaiian"
+};
+
+if(suitcase.hasOwnProperty("shorts") === true) {
+  console.log(suitcase.shorts)
+} else {
+  suitcase.shorts = "big shorts"
+};
