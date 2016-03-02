@@ -130,7 +130,7 @@ function Dog (breed) {
 
 // here we make buddy and teach him how to bark
 var buddy = new Dog("Golden Retriever");
-buddy.bark = function() {
+Dog.prototype.bark = function()  = function() {        /////prototype adds the method to all objects of the class
   console.log("Woof");
 };
 buddy.bark();
