@@ -233,3 +233,5 @@ function Penguin(name, numLegs) {
 // set its prototype to be a new instance of Animal
 Penguin.prototype = new Animal();
 -----------------------------------
+var penguin = new Penguin("pepe")
+penguin.sayName();
