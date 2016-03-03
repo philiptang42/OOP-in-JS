@@ -192,3 +192,26 @@ Animal.prototype.sayName = function() {
 // provided code to test above constructor and method
 var penguin = new Animal("Captain Cook", 2);
 penguin.sayName();
+---------------------------
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+}
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+// create a Penguin constructor here
+function Penguin(name, numLegs) {
+  this.name = name;
+  this.numLegs = numLegs;
+};
+
+// create a sayName method for Penguins here
+Penguin.prototype.sayName = function () {
+  console.log("Hi my name is " + this.name);
+};
+
+// our test code
+var theCaptain = new Penguin("Captain Cook", 2);
+theCaptain.sayName();
+------------------------------
