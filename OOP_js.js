@@ -288,3 +288,16 @@ var myLast = john.lastName;
 
 //declare variable myAge set to the age of the john object.
 var myAge = john.age;
+------------------------------
+function Person(first,last,age) {
+   this.firstname = first;
+   this.lastname = last;
+   this.age = age;
+   var bankBalance = 7500;
+}
+
+// create your Person
+var john = new Person("John", "Cena", 38)
+
+// try to print his bankBalance
+console.log(john.bankBalance)
