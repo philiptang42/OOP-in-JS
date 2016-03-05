@@ -359,3 +359,17 @@ var john = new Person('John','Smith',30);
 /* the variable myBalance should access askTeller()
    with a password as an argument  */
 var myBalance = john.askTeller(1234);
+----------------------------------
+var languages = {
+    english: "Hello!",
+    french: "Bonjour!",
+    notALanguage: 4,
+    spanish: "Hola!"
+};
+
+// print hello in the 3 different languages
+for(var x in languages) {
+  if(typeof languages[x] === "string") {
+    console.log(languages[x]);
+  };
+};
